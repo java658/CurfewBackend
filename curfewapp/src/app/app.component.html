@@ -1,0 +1,39 @@
+<div class="nav">
+  <nav class="navbar navbar-expand-md navbar-light">
+    <a class="navbar-brand" href="#"></a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <h2 class="text-success">CURFEW PASS</h2>
+      <!-- <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" *ngIf="userLoggedIn" routerLink="userhome"><b class="text-primary">USER
+              DASHBOARD</b></a><br>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="doctorhome"><b class="text-primary">DOCTOR DASHBOARD</b></a><br>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="govthome"><b class="text-primary">GOVT DASHBOARD</b></a><br>
+        </li> 
+        <li class="nav-item active">
+          <a class="nav-link" *ngIf="!userLoggedIn" routerLink="register"><b class="text-primary">REGISTER</b></a><br>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" *ngIf="!userLoggedIn" routerLink="login"><b class="text-primary">LOGIN</b></a><br>
+        </li>
+      </ul>-->
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div style="min-height: 155vh;">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  <footer id="footer">
+    <div class="copyright">
+      <h6> @Copyright<strong class="text-success">Cognizant</strong>. All Rights Reserved</h6>
+    </div>
+  </footer>
+</div>

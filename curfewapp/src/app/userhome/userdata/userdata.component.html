@@ -1,0 +1,60 @@
+<section id="intro">
+    <div class="container">
+      <div class="card card-responsive w-50 h-100 bg-light mt-5 ">
+        <div class="card-body">
+          <h2>USER DASHBOARD</h2>
+    <form [formGroup]="detailsForm" (ngSubmit)="addDetails()">
+      <!-- <div class="form-group">
+        <label for="id">Id:</label>
+        <input type="number" class="form-control" id="id" formControlName="id"  placeholder="Enter Id" name="id" />
+      </div> -->
+      <div class="form-group">
+        <label for="userName">UserName:</label>
+        <input type="String" class="form-control" id="userName" formControlName="userName"  placeholder="Enter userName" name="userName" disabled/>
+      </div>
+      <div class="form-group">
+        <label for="firstName">FirstName:</label>
+        <input type="String" class="form-control" id="firstName" formControlName="firstName"  placeholder="Enter FirstName" name="firstName" required/>
+      </div>
+      <div class="form-group">
+          <label for="lastName">Last Name:</label>
+          <input type="String" class="form-control" id="lastName" formControlName="lastName"  placeholder="Enter lastName" name="lastName" required/>
+        </div>
+      <div class="form-group">
+        <label for="age">Age:</label>
+        <input type="number" class="form-control" id="age" formControlName="age" placeholder="Enter age" name="age" required/>
+      </div>
+      <div class="form-group">
+        <label for="source">Source:</label>
+        <input type="String" class="form-control" id="source" formControlName="source" placeholder="Enter source" name="source" required/>
+      </div>
+      <div class="form-group">
+          <label for="destination">Destination:</label>
+          <input type="String" class="form-control" id="destination" formControlName="destination" placeholder="Enter destination" name="destination" required/>
+        </div>
+        <div class="form-group">
+            <label for="reason">Reason:</label>
+            <input type="String" class="form-control" id="reason" formControlName="reason" placeholder="Enter reason" name="reason" required/>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="String" class="form-control" id="email" formControlName="email" placeholder="Enter email" name="email" required/>
+          </div>
+          <div class="form-group">
+            <label for="phone">Mobile No:</label>
+            <input type="number" class="form-control" id="phone" formControlName="phone" placeholder="Enter number" name="phone" required/>
+          </div>
+      <button type="submit" class="btn btn-info" [disabled]="!detailsForm.valid">Submit</button>&nbsp;&nbsp;     
+    </form>
+      </div>  
+    </div>
+  </div>
+</section>
+<div class="mx-4">
+  <a onclick="location.href='userhome'"><button class="btn btn-dark">BACK</button></a>
+</div>
+<div class="container body-content app-container">
+  <router-outlet></router-outlet>
+</div>
+
+

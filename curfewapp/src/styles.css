@@ -1,0 +1,155 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+body
+{
+    width:100%;
+    min-height:100vh;
+    background:url("../src/assets/backgroung.jpg") no-repeat;
+    background-size: cover;
+}
+nav
+{
+  width:100%;
+  background-color:white;
+}
+
+#footer {
+    position: fixed;
+    top:10;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:white;
+    color: black;
+    text-align: center;
+  }
+  #footer .copyright {
+    text-align: center;
+    padding-top: 30px;
+  }
+  .card {
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+}
+
+
+
+
+#intro .intro-content {
+  position: absolute; 
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 40;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+}
+
+#intro .intro-content h2 {
+  color: #0c2e8a;
+  margin-bottom: 30px;
+  font-size: 64px;
+  font-weight: 700;
+}
+
+#intro .intro-content h2 span {
+  color: #50d8af;
+  text-decoration: underline;
+}
+
+#intro .intro-content .btn-get-started,
+#intro .intro-content .btn-projects {
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+   display: inline-block; 
+  padding: 12px 32px;
+  border-radius: 2px;
+  transition: 0.5s;
+  margin: 10px;
+  color: #fff;
+}
+#intro .intro-c .btn-get-started,
+#intro .intro-c .btn-projects {
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+   display: inline-block; 
+  padding: 12px 32px;
+  border-radius: 2px;
+  transition: 0.5s;
+  margin: 10px;
+  color: #fff;
+}
+#intro .intro-c .btn-get-startedd,
+#intro .intro-c .btn-projects {
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+   display: inline-block; 
+  padding: 12px 32px;
+  border-radius: 2px;
+  transition: 0.5s;
+  margin: 10px;
+  color: #fff;
+}
+
+#intro .intro-content .btn-get-started {
+  background: #0c2e8a;
+  border: 2px solid #0c2e8a;
+}
+#intro .intro-c .btn-get-startedd {
+  background: grey;
+  border: 2px solid grey;
+}
+#intro .intro-c .btn-get-started {
+  background: #50d884;
+  border: 2px solid #50d884;
+}
+
+#intro .intro-content .btn-get-started:hover {
+  background: none;
+  color: #0c2e8a;
+}
+#intro .intro-c .btn-get-started:hover {
+  background: none;
+  color:#50d884 ;
+}
+#intro .intro-c .btn-get-startedd:hover {
+  background: none;
+  color:black ;
+}
+
+#intro .intro-content .btn-projects {
+  background: #50d8af;
+  border: 2px solid #50d8af;
+}
+
+#intro .intro-content .btn-projects:hover {
+  background: none;
+  color: #50d8af;
+}
+
+
+ 
+

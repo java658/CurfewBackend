@@ -1,0 +1,41 @@
+<div>
+    <a class="nav-link float-right" routerLink="/logout"><b class="text-primary">LOGOUT</b></a>
+</div>
+<h3 class="text-center mt-5">Users details after government grant</h3>
+<table class="table-responsive text-center">
+    <div class="table table-bordered mt-5">
+    <tr>
+        <th>Id</th>
+        <th>UserName</th>
+        <th>FirstName</th>
+        <th>LastName</th>
+        <th>Age</th>
+        <th>EmailId</th>
+        <th>Mobile No</th>
+        <th>Source</th>
+        <th>Destination</th>
+        <th>Reason</th>
+        <th class="text-center">Actions</th>
+    </tr>
+    <tr *ngFor="let det of dets">
+        <td>{{det.requestId}}</td>
+        <td>{{det.userName}}</td>
+        <td>{{det.firstName}}</td>
+        <td>{{det.lastName}}</td>
+        <td>{{det.age}}</td>
+        <td>{{det.email}}</td>
+        <td>{{det.phone}}</td>
+        <td>{{det.source}}</td>
+        <td>{{det.destination}}</td>
+        <td>{{det.reason}}</td>
+        <td><button class="btn btn-success" (click)="updateProcessingToFinalStage(det)">ACCEPT</button>&nbsp;&nbsp;&nbsp;
+            <button class="btn btn-danger" (click)="updateStatusToRejected(det)">DECLINE</button></td> 
+    </tr>
+   
+    </div>
+    
+</table>
+  <div class="container body-content app-container">
+  
+    <router-outlet></router-outlet>
+  </div>
